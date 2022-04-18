@@ -15,6 +15,7 @@ export const Default: React.FC = (args) => {
 }
 
 export const Avatar = Default.bind({})
+// @ts-ignore
 Avatar.args = {
     width: 40,
     height: 40,
@@ -22,6 +23,7 @@ Avatar.args = {
 }
 
 export const Animation = Default.bind({})
+// @ts-ignore
 Animation.args = {
     width: 100,
     height: 200,

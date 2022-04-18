@@ -19,9 +19,10 @@ export const Default: React.FC = () => {
       id: `id-${now}`,
       title: `Title: ${now}`,
       description,
+      //@ts-ignore
       type: alertVariants[sample(Object.keys(alertVariants))],
     };
-
+    //@ts-ignore
     setToasts((prevToasts) => [randomToast, ...prevToasts]);
   };
 
@@ -61,9 +62,10 @@ export const WithAction: React.FC = () => {
         text: "Action Button",
         url: "https://pancakeswap.finance",
       },
+      //@ts-ignore
       type: alertVariants[sample(Object.keys(alertVariants))],
     };
-
+    //@ts-ignore
     setToasts((prevToasts) => [randomToast, ...prevToasts]);
   };
 
