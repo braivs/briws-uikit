@@ -1,6 +1,6 @@
 {
   "name": "briws-uikit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -74,5 +74,9 @@
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "^0.0.9",
     "webpack": "^5.72.0"
-  }
+  },
+  "main": "index.tsx",
+  "repository": "git@github.com:brightwiths/briws-uikit.git",
+  "author": "Briws <brightwiths@gmail.com>",
+  "license": "MIT"
 }
