@@ -1,7 +1,17 @@
 {
   "name": "briws-uikit",
   "version": "0.1.2",
+  "license": "MIT",
+  "main": "dist/js/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/js/index.d.ts",
+  "author": "Briws <briws@pm.me>",
   "private": false,
+  "publishConfig": {
+    "access": "public",
+    "tag": "prerelease"
+  },
+  "repository": "git@github.com:brightwiths/briws-uikit.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
@@ -27,6 +37,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "build:lib": "yarn build:babel && yarn build:types && node ./scripts/copyTS.js",
+    "build:babel": "concurrently \"yarn build:babel:esm && yarn build:babel:umd\" \"yarn build:babel:cjs\"",
+    "build:babel:cjs": "cross-env BABEL_ENV=cjs babel --source-maps --extensions \".js,.ts,.tsx\" src --out-dir dist/js --presets=@babel/env",
+    "build:babel:esm": "cross-env BABEL_ENV=esm babel --source-maps --extensions \".js,.ts,.tsx\" src --out-dir dist/esm",
+    "build:babel:umd": "cross-env BABEL_ENV=umd babel --source-maps --extensions \".js\" dist/esm --out-dir dist/umd --plugins=transform-es2015-modules-umd",
+    "build:types": "tsc -p tsconfig.gen-dts.json",
+    "clean": "rimraf dist",
+    "develop": "yarn build:types && yarn build:babel:esm --skip-initial-build --watch --verbose",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -63,6 +81,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/plugin-proposal-export-default-from": "^7.16.7",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-interactions": "^6.4.22",
@@ -73,10 +93,10 @@
     "@storybook/preset-create-react-app": "^4.1.0",
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "^0.0.9",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-plugin-typescript-to-proptypes": "^2.0.0",
+    "concurrently": "^7.1.0",
+    "cross-env": "^7.0.3",
     "webpack": "^5.72.0"
-  },
-  "main": "index.tsx",
-  "repository": "git@github.com:brightwiths/briws-uikit.git",
-  "author": "Briws <brightwiths@gmail.com>",
-  "license": "MIT"
+  }
 }
