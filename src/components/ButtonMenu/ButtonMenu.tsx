@@ -1,4 +1,5 @@
-import React, { cloneElement, Children, ReactElement } from "react";
+import * as React from "react";
+import { cloneElement, Children, ReactElement } from "react";
 import StyledButtonMenu from "./StyledButtonMenu";
 import { scales, variants } from "../Button/types";
 import { ButtonMenuProps } from "./types";
