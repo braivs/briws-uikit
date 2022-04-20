@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import styled, { keyframes, DefaultTheme } from "styled-components";
 import { Text } from "../../../components/Text";
 import { Colors } from "../../../theme/types";

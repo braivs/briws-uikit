@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import Heading from "../../components/Heading/Heading";
 import { ModalBody, ModalHeader, ModalTitle, ModalContainer, ModalCloseButton, ModalBackButton } from "./styles";
 import { ModalProps } from "./types";

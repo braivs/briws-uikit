@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import { SvgProps } from "../../../components/Svg";
 import Text from "../../../components/Text/Text";
 import Dropdown from "../../../components/Dropdown/Dropdown";

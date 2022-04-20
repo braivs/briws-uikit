@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import { Modal, useModal } from ".";
 import { InjectedProps } from "./types";
 import Button from "../../components/Button/Button";

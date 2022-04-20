@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import BoxComponent from "./Box";
 import FlexComponent from "./Flex";
 import Text from "../Text/Text";

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import styled, { keyframes } from "styled-components";
 import { space, layout } from "styled-system";
 import { SkeletonProps, animation as ANIMATION, variant as VARIANT } from "./types";

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import { capitalize } from "lodash";
 import Box from "../Box/Box";
 import Flex from "../Box/Flex";

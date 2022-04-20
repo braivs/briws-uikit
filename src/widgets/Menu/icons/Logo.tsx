@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import { SvgProps } from '../../../components';
 import swapLogo from '../../../assets/img/swapLogo.png'
 import styled from 'styled-components'

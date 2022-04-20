@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import { renderWithTheme } from "../../testHelpers";
 import Skeleton from "../../components/Skeleton/Skeleton";
 

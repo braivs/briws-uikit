@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import styled, { keyframes } from "styled-components";
 import PanIcon from "./PanIcon";
 import PancakeIcon from "./PancakeIcon";

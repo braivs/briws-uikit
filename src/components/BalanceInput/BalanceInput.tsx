@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import Text from "../Text/Text";
 import { StyledBalanceInput, StyledInput } from "./styles";
 import { BalanceInputProps } from "./types";

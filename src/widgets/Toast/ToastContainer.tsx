@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import { TransitionGroup } from "react-transition-group";
 import styled from "styled-components";
 import Toast from "./Toast";

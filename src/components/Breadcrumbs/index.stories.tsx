@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import Text from "../Text/Text";
 import Link from "../Link/Link";
 import LogoIcon from "../Svg/Icons/Logo";

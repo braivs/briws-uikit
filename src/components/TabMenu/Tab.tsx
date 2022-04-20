@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react"
 import StyledTab from "./StyledTab";
 import { TabProps } from "./types";
 import { Text } from "../Text";
