@@ -1,6 +1,6 @@
 {
   "name": "briws-uikit",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "license": "MIT",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
@@ -39,7 +39,7 @@
   "scripts": {
     "build:lib": "yarn build:babel && yarn build:types && node ./scripts/copyTS.js",
     "build:babel": "concurrently \"yarn build:babel:esm && yarn build:babel:umd\" \"yarn build:babel:cjs\"",
-    "build:babel:cjs": "cross-env BABEL_ENV=cjs babel --source-maps --extensions \".js,.ts,.tsx\" src --out-dir dist/js --presets=@babel/env",
+    "build:babel:cjs": "cross-env BABEL_ENV=cjs babel --source-maps --extensions \".js,.ts,.tsx\" src --out-dir dist --presets=@babel/env",
     "build:babel:esm": "cross-env BABEL_ENV=esm babel --source-maps --extensions \".js,.ts,.tsx\" src --out-dir dist/esm",
     "build:babel:umd": "cross-env BABEL_ENV=umd babel --source-maps --extensions \".js\" dist/esm --out-dir dist/umd --plugins=transform-es2015-modules-umd",
     "build:types": "tsc",
