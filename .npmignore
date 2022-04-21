@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
 /.pnp
 .pnp.js
 
@@ -25,4 +24,8 @@ yarn.lock
 .idea
 package-lock.json
 
-dist
+# additional for pack
+.storybook
+src
+storybook-static
+node_modules
