@@ -24,8 +24,6 @@ files.forEach(file => {
 
 svgFiles.forEach(file => {
     const from = path.join(srcDir, file);
-    const toJS = path.join(jsDir, file);
     const toEsm = path.join(esmDir, file);
-    fse.copySync(from, toJS);
     fse.copySync(from, toEsm);
 });
