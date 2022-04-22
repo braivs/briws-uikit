@@ -1,6 +1,6 @@
 {
   "name": "briws-uikit",
-  "version": "0.1.40",
+  "version": "0.1.41",
   "license": "MIT",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
@@ -83,6 +83,8 @@
   "devDependencies": {
     "@babel/cli": "^7.17.6",
     "@babel/plugin-proposal-export-default-from": "^7.16.7",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.16.7",
+    "@babel/plugin-proposal-optional-chaining": "^7.16.7",
     "@storybook/addon-actions": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-interactions": "^6.4.22",
