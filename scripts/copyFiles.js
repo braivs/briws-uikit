@@ -12,7 +12,7 @@ const files = glob.sync('**/*.d.ts', {
     cwd: srcDir
 });
 
-const svgFiles = glob.sync('**/*.svg', {
+const imgFiles = glob.sync('**/*.{svg,png}', {
     cwd: srcDir
 });
 
@@ -22,7 +22,7 @@ files.forEach(file => {
     fse.copySync(from, to);
 });
 
-svgFiles.forEach(file => {
+imgFiles.forEach(file => {
     const from = path.join(srcDir, file);
     const toEsm = path.join(esmDir, file);
     fse.copySync(from, toEsm);
