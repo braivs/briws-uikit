@@ -1,6 +1,6 @@
 {
   "name": "briws-uikit",
-  "version": "0.1.44",
+  "version": "0.1.45",
   "license": "MIT",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
@@ -101,5 +101,10 @@
     "concurrently": "^7.1.0",
     "cross-env": "^7.0.3",
     "webpack": "^5.72.0"
+  },
+  "resolutions": {
+    "alias": {
+      "react-router-dom": "path.resolve('./node_modules/react-router-dom')"
+    }
   }
 }
