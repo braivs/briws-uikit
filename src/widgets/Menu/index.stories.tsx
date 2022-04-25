@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import noop from "lodash/noop";
-import { BrowserRouter, MemoryRouter } from "react-router-dom";
 import Flex from "../../components/Box/Flex";
 import Heading from "../../components/Heading/Heading";
 import Text from "../../components/Text/Text";
@@ -60,7 +59,6 @@ const useProps = () => {
 export const Connected: React.FC = () => {
   const props = useProps();
   return (
-    <BrowserRouter>
       <Menu {...props}>
         <div>
           <Heading as="h1" mb="8px">
@@ -81,13 +79,11 @@ export const Connected: React.FC = () => {
           </Text>
         </div>
       </Menu>
-    </BrowserRouter>
   );
 };
 
 export const NotConnected: React.FC = () => {
   return (
-    <BrowserRouter>
       <Menu
         account={null}
         login={noop}
@@ -112,13 +108,11 @@ export const NotConnected: React.FC = () => {
           mollit anim id est laborum.
         </div>
       </Menu>
-    </BrowserRouter>
   );
 };
 
 export const WithNoProfile: React.FC = () => {
   return (
-    <BrowserRouter>
       <Menu
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
         login={noop}
@@ -154,13 +148,11 @@ export const WithNoProfile: React.FC = () => {
           </Text>
         </div>
       </Menu>
-    </BrowserRouter>
   );
 };
 
 export const WithProfile: React.FC = () => {
   return (
-    <BrowserRouter>
       <Menu
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
         login={noop}
@@ -198,7 +190,6 @@ export const WithProfile: React.FC = () => {
           </Text>
         </div>
       </Menu>
-    </BrowserRouter>
   );
 };
 
@@ -214,7 +205,7 @@ export const MenuEntryComponent: React.FC = () => {
 
 export const WithSubmenuSelected: React.FC = () => {
   return (
-    <MemoryRouter initialEntries={["/teams"]}>
+    <div>
       <Menu
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
         login={noop}
@@ -239,6 +230,6 @@ export const WithSubmenuSelected: React.FC = () => {
           </Heading>
         </div>
       </Menu>
-    </MemoryRouter>
+    </div>
   );
 };

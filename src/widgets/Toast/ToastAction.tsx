@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "react-router-dom";
 import getExternalLinkProps from "../../util/getExternalLinkProps";
 import { Button } from "../../components/Button";
 import { ToastAction as Action } from "./types";
@@ -18,7 +17,7 @@ const ToastAction: React.FC<ToastActionProps> = ({ action }) => {
   }
 
   return (
-    <Button as={Link} scale="sm" to={action.url}>
+    <Button as="a" scale="sm" href={action.url}>
       {action.text}
     </Button>
   );

@@ -1,5 +1,4 @@
 import { ComponentProps, ElementType, ReactElement, ReactNode } from "react";
-import { Link } from "react-router-dom";
 import { LayoutProps, SpaceProps } from "styled-system";
 
 export const scales = {
@@ -37,7 +36,7 @@ export type PolymorphicComponent<P, D extends ElementType = "button"> = <E exten
 ) => ReactElement | null;
 
 export interface BaseButtonProps extends LayoutProps, SpaceProps {
-  as?: "a" | "button" | typeof Link;
+  as?: "a" | "button";
   external?: boolean;
   isLoading?: boolean;
   scale?: Scale;
