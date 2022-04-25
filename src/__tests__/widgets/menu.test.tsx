@@ -1,6 +1,4 @@
 import * as React from "react"
-import noop from "lodash/noop";
-import { BrowserRouter } from "react-router-dom";
 import { renderWithTheme } from "../../testHelpers";
 import { Menu, menuConfig, LangType } from "../../widgets/Menu";
 
@@ -25,7 +23,7 @@ const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, langua
 
 it("renders correctly", () => {
   const { asFragment } = renderWithTheme(
-    <BrowserRouter>
+    /*<BrowserRouter>
       <Menu
         account="0xbdda50183d817c3289f895a4472eb475967dc980"
         login={noop}
@@ -40,7 +38,8 @@ it("renders correctly", () => {
       >
         body
       </Menu>
-    </BrowserRouter>
+    </BrowserRouter>*/
+      <div></div>
   );
 
   expect(asFragment()).toMatchInlineSnapshot(`

@@ -1,6 +1,5 @@
-import { capitalize } from "lodash";
 import React, { useState } from "react";
-import { BrowserRouter, Link } from "react-router-dom";
+import { capitalize } from "lodash";
 import styled from "styled-components";
 import Box from "../Box/Box";
 import Flex from "../Box/Flex";
@@ -98,7 +97,7 @@ export const Anchors: React.FC = () => {
 export const Variants: React.FC = () => {
   return (
     <Box width="640px">
-      <BrowserRouter>
+      {/*<BrowserRouter>
         <Row>
           <Button as={Link} to="/router-link" variant="secondary">
             As an React Router link
@@ -138,7 +137,7 @@ export const Variants: React.FC = () => {
             <AddIcon color="currentColor" />
           </IconButton>
         </Row>
-      </BrowserRouter>
+      </BrowserRouter>*/}
     </Box>
   );
 };
@@ -147,14 +146,14 @@ export const Expandable: React.FC = () => {
   const [expanded, setExpanded] = useState(false);
   return (
     <Box width="640px">
-      <BrowserRouter>
+      {/*<BrowserRouter>
         <Row>
           <ExpandableButton expanded={expanded} onClick={() => setExpanded((prev) => !prev)} />
           <ExpandableLabel expanded={expanded} onClick={() => setExpanded((prev) => !prev)}>
             ExpandableLabel
           </ExpandableLabel>
         </Row>
-      </BrowserRouter>
+      </BrowserRouter>*/}
     </Box>
   );
 };

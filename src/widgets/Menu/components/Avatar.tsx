@@ -1,6 +1,5 @@
 import * as React from "react"
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import { Profile } from "../types";
 import NoProfileAvatar from "../../../components/Svg/Icons/NoProfileAvatar";
 
@@ -52,9 +51,9 @@ const Avatar: React.FC<AvatarProps> = ({ profile }) => {
 
   return (
     <StyledAvatar title={username}>
-      <Link to={link} aria-label={ariaLabel}>
+      {/*<Link to={link} aria-label={ariaLabel}>
         {icon}
-      </Link>
+      </Link>*/}
       {showPip && <Pip />}
     </StyledAvatar>
   );
