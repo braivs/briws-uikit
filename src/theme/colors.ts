@@ -1,5 +1,5 @@
 import { Colors } from "./types";
-import {backgroundColor, buttonColor, headerTransactionLightColor} from '../common/styles/variables'
+import {backgroundColor, buttonColor, headerTransactionLightColor, textColor} from '../common/styles/variables'
 
 export const baseColors = {
   failure: "#ED4B9E",
@@ -28,7 +28,7 @@ export const lightColors: Colors = {
   inputSecondary: "#66578D",
   primaryDark: "#0098A1",
   tertiary: "#353547",
-  text: "#EAE2FC",
+  text: textColor,
   textDisabled: "#666171",
   textSubtle: headerTransactionLightColor,
   borderColor: "rgba(0,0,0,0)",
@@ -51,7 +51,7 @@ export const darkColors: Colors = {
   inputSecondary: "#66578D",
   primaryDark: "#0098A1",
   tertiary: "#353547",
-  text: "#EAE2FC",
+  text: textColor,
   textDisabled: "#666171",
   textSubtle: headerTransactionLightColor,
   borderColor: "#524B63",
