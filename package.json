@@ -1,6 +1,6 @@
 {
   "name": "briws-uikit",
-  "version": "0.1.67",
+  "version": "0.1.68",
   "license": "MIT",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
@@ -47,7 +47,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "publish": "yarn publish --ignore-scripts"
   },
   "eslintConfig": {
     "extends": [
