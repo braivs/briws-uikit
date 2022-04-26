@@ -1,8 +1,9 @@
 import { Colors } from "./types";
+import {buttonColor} from '../common/styles/variables'
 
 export const baseColors = {
   failure: "#ED4B9E",
-  primary: "#6E7FF3",
+  primary: buttonColor, /* todo: this colors also affect history and setting icon, need to separate */
   primaryBright: "#53DEE9",
   primaryDark: "#0098A1",
   secondary: "#7645D9",
