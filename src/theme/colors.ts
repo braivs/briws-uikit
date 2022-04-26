@@ -1,5 +1,5 @@
 import { Colors } from "./types";
-import {backgroundColor, buttonColor} from '../common/styles/variables'
+import {backgroundColor, buttonColor, headerTransactionLightColor} from '../common/styles/variables'
 
 export const baseColors = {
   failure: "#ED4B9E",
@@ -24,13 +24,13 @@ export const lightColors: Colors = {
   contrast: "#FFFFFF",
   dropdown: "#1E1D20",
   invertedContrast: "#191326",
-  input: backgroundColor, /* todo: this also affect top field: (Swap/Liquidity/Bridge), maybe need to separate */
+  input: backgroundColor, /* Color for fields: From & To. todo: this also affect top field: (Swap/Liquidity/Bridge), maybe need to separate */
   inputSecondary: "#66578D",
   primaryDark: "#0098A1",
   tertiary: "#353547",
   text: "#EAE2FC",
   textDisabled: "#666171",
-  textSubtle: "#A28BD4",
+  textSubtle: headerTransactionLightColor,
   borderColor: "rgba(0,0,0,0)",
   card: "#27262c",
   gradients: {
@@ -47,13 +47,13 @@ export const darkColors: Colors = {
   contrast: "#FFFFFF",
   dropdown: "#1E1D20",
   invertedContrast: "#191326",
-  input: backgroundColor, /* todo: this also affect top field: (Swap/Liquidity/Bridge), maybe need to separate */
+  input: backgroundColor, /* Color for fields: From & To. todo: this also affect top field: (Swap/Liquidity/Bridge), maybe need to separate */
   inputSecondary: "#66578D",
   primaryDark: "#0098A1",
   tertiary: "#353547",
   text: "#EAE2FC",
   textDisabled: "#666171",
-  textSubtle: "#A28BD4",
+  textSubtle: headerTransactionLightColor,
   borderColor: "#524B63",
   card: "#27262c",
   gradients: {
