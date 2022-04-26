@@ -1,6 +1,6 @@
 {
   "name": "briws-uikit",
-  "version": "0.1.64",
+  "version": "0.1.67",
   "license": "MIT",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
@@ -44,8 +44,6 @@
     "build:types": "tsc",
     "clean": "rimraf dist",
     "develop": "yarn build:types && yarn build:babel:esm --skip-initial-build --watch --verbose",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",

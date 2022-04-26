@@ -3,7 +3,7 @@ import {backgroundColor, buttonColor, headerTransactionLightColor} from '../comm
 
 export const baseColors = {
   failure: "#ED4B9E",
-  primary: buttonColor, /* todo: this colors also affect history and setting icon, need to separate */
+  primary: buttonColor,
   primaryBright: "#53DEE9",
   primaryDark: "#0098A1",
   secondary: "#7645D9",

@@ -2,6 +2,7 @@ import styled, { css, keyframes } from "styled-components";
 import { space } from "styled-system";
 import getThemeValue from "../../util/getThemeValue";
 import { SvgProps } from "./types";
+import {backgroundColor} from '../../common/styles/variables'
 
 const rotate = keyframes`
   from {
@@ -17,7 +18,7 @@ const spinStyle = css`
 `;
 
 const Svg = styled.svg<SvgProps>`
-  fill: ${({ theme, color }) => getThemeValue(`colors.${color}`, color)(theme)};
+  fill: ${backgroundColor}; /*gear color*/
   flex-shrink: 0;
 
   ${({ spin }) => spin && spinStyle}
