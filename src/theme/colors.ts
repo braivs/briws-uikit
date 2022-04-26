@@ -24,7 +24,7 @@ export const lightColors: Colors = {
   contrast: "#FFFFFF",
   dropdown: "#1E1D20",
   invertedContrast: "#191326",
-  input: backgroundColor, /* Color for fields: From & To. todo: this also affect top field: (Swap/Liquidity/Bridge), maybe need to separate */
+  input: backgroundColor, /* Color for fields: From & To. */
   inputSecondary: "#66578D",
   primaryDark: "#0098A1",
   tertiary: "#353547",
@@ -47,7 +47,7 @@ export const darkColors: Colors = {
   contrast: "#FFFFFF",
   dropdown: "#1E1D20",
   invertedContrast: "#191326",
-  input: backgroundColor, /* Color for fields: From & To. todo: this also affect top field: (Swap/Liquidity/Bridge), maybe need to separate */
+  input: backgroundColor, /* Color for fields: From & To. */
   inputSecondary: "#66578D",
   primaryDark: "#0098A1",
   tertiary: "#353547",
