@@ -1,6 +1,6 @@
 {
   "name": "briws-uikit",
-  "version": "0.1.52",
+  "version": "0.1.53",
   "license": "MIT",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
