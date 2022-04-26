@@ -1,6 +1,7 @@
 import styled, { DefaultTheme } from "styled-components";
 import { space } from "styled-system";
 import { CardProps } from "./types";
+import {menuColor} from '../../common/styles/variables'
 
 interface StyledCardProps extends CardProps {
   theme: DefaultTheme;
@@ -25,7 +26,6 @@ const getBoxShadow = ({ isActive, isSuccess, isWarning, theme }: StyledCardProps
   return theme.card.boxShadow;
 };
 
-/*background-color: ${({ theme }) => theme.card.background};*/
 const StyledCard = styled.div<StyledCardProps>`
   border: ${({ theme }) => theme.card.boxShadow};
   border-radius: 32px;
@@ -33,8 +33,7 @@ const StyledCard = styled.div<StyledCardProps>`
   color: ${({ theme, isDisabled }) => theme.colors[isDisabled ? "textDisabled" : "text"]};
   overflow: hidden;
   position: relative;
-  background-color: #161618 ; /*This is Menu color*/
-
+  background-color: ${menuColor}; /*This is Menu color*/
   ${space}
 `;
 
