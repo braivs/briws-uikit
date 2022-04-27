@@ -16,6 +16,10 @@ const imgFiles = glob.sync('**/*.{svg,png}', {
     cwd: srcDir
 });
 
+const styleFiles = glob.sync('**/*.css', {
+    cwd: srcDir
+});
+
 files.forEach(file => {
     const from = path.join(srcDir, file);
     const to = path.join(jsDir, file);
@@ -23,6 +27,12 @@ files.forEach(file => {
 });
 
 imgFiles.forEach(file => {
+    const from = path.join(srcDir, file);
+    const toEsm = path.join(esmDir, file);
+    fse.copySync(from, toEsm);
+});
+
+styleFiles.forEach(file => {
     const from = path.join(srcDir, file);
     const toEsm = path.join(esmDir, file);
     fse.copySync(from, toEsm);
